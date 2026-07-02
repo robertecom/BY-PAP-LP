@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiciona Carreira by PAP | Currículo Estratégico com IA</title>
+    <meta name="description" content="Transforme sua trajetória profissional em currículo, LinkedIn e posicionamento estratégico utilizando Inteligência Artificial orientada pelo Método PAP.">
+    <meta name="keywords" content="currículo com IA, LinkedIn profissional, currículo ATS, como melhorar currículo, preparação para entrevista, mensagem para recrutador, transição de carreira, recolocação profissional, posicionamento profissional, IA para carreira">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Posiciona Carreira by PAP">
+    <link rel="canonical" href="https://posicionacarreira.com.br">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Posiciona Carreira by PAP | Currículo Estratégico com IA">
+    <meta property="og:description" content="Transforme sua trajetória profissional em currículo, LinkedIn e posicionamento estratégico utilizando Inteligência Artificial orientada pelo Método PAP.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Posiciona Carreira by PAP",
+        "description": "Plataforma completa de posicionamento profissional com Inteligência Artificial orientada pelo Método PAP.",
+        "brand": { "@type": "Brand", "name": "PAP" },
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">Posiciona Carreira <span class="logo-sub">by PAP</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#como-funciona" class="nav-link">Como funciona</a>
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#o-que-voce-recebe" class="nav-link">O que você recebe</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <button class="btn btn-primary btn-header" onclick="openModal()">Quero melhorar meu posicionamento</button>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-inner">
+            <div class="hero-content fade-up">
+                <h1 class="hero-title">Seu currículo não é o problema.<br><span class="highlight">Seu posicionamento é.</span></h1>
+                <p class="hero-subtitle">Transforme sua trajetória profissional em um currículo estratégico, LinkedIn otimizado, pitch profissional e materiais que realmente fazem sentido para o mercado utilizando <strong>Inteligência Artificial orientada pelo Método PAP</strong>.</p>
+                <div class="hero-badges">
+                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Método Exclusivo PAP</span>
+                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Inteligência Artificial Especializada</span>
+                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Posicionamento Profissional Estratégico</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="openModal()">Quero transformar minha carreira</button>
+                    <button class="btn btn-secondary btn-lg" onclick="openModal()">Receber diagnóstico gratuito</button>
+                </div>
+            </div>
+            <div class="hero-visual fade-up delay-1">
+                <div class="hero-illustration">
+                    <div class="float-card card-cv">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+                        <span>Currículo</span>
+                    </div>
+                    <div class="float-card card-linkedin">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="float-card card-ai">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <span>IA</span>
+                    </div>
+                    <div class="float-card card-dashboard">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="float-card card-interview">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        <span>Entrevistas</span>
+                    </div>
+                    <div class="float-card card-market">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+                        <span>Mercado</span>
+                    </div>
+                    <div class="illustration-center">
+                        <div class="pulse-ring"></div>
+                        <div class="center-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Bar -->
+    <section class="credibility-bar">
+        <div class="container">
+            <div class="credibility-items">
+                <div class="credibility-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Currículos Estratégicos</div>
+                <div class="credibility-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> LinkedIn Otimizado</div>
+                <div class="credibility-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> IA Especializada</div>
+                <div class="credibility-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Método PAP</div>
+                <div class="credibility-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Estratégia Profissional</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Section -->
+    <section class="section pain-section" id="dor">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Você possui experiência...<br><span class="text-muted">Mas o mercado não consegue enxergar seu verdadeiro potencial.</span></h2>
+            </div>
+            <div class="pain-grid fade-up delay-1">
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>Usa o mesmo currículo para todas as vagas</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>LinkedIn incompleto ou desatualizado</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>Dificuldade em se vender profissionalmente</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>Entrevistas que não geram retorno</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>Mensagens para recrutadores sem resposta</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <p>Utilização de IA sem estratégia definida</p>
+                </div>
+            </div>
+            <p class="pain-impact fade-up delay-2"><strong>O problema nunca foi sua experiência. O problema é como ela está sendo apresentada.</strong></p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section solution-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Conheça o <span class="highlight">Posiciona Carreira by PAP</span></h2>
+                <p class="section-subtitle">Uma plataforma que combina método, especialistas, inteligência artificial e leitura de mercado para posicionar sua carreira de forma estratégica.</p>
+            </div>
+            <div class="solution-grid fade-up delay-1">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                    </div>
+                    <h3>Método</h3>
+                    <p>O Método PAP estrutura seu posicionamento com base em estratégia real de mercado.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Especialistas</h3>
+                    <p>Profissionais que entendem o mercado e sabem o que recrutadores buscam.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>IA treinada para criar materiais profissionais com linguagem ATS e foco em resultados.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+                    </div>
+                    <h3>Leitura de Mercado</h3>
+                    <p>Análise contínua do que as empresas realmente valorizam em candidatos.</p>
+                </div>
+            </div>
+            <div class="solution-note fade-up delay-2">
+                <p>Não é um gerador automático de currículo.<br><strong>É uma plataforma completa de posicionamento profissional.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section how-section" id="como-funciona">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="section-subtitle">Um processo simples e estratégico em cinco passos.</p>
+            </div>
+            <div class="timeline fade-up delay-1">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Escolha o serviço</h3>
+                        <p>Selecione o material ou pacote que melhor atende seu momento profissional.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Preencha um formulário inteligente</h3>
+                        <p>Conte sobre sua trajetória, experiências e objetivos de forma guiada.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Nossa IA analisa toda sua trajetória</h3>
+                        <p>A inteligência artificial processa suas informações e identifica seus diferenciais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>O Método PAP estrutura seu posicionamento</h3>
+                        <p>Estratégia, linguagem e formatação alinhados ao que o mercado valoriza.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>Você recebe materiais profissionais prontos</h3>
+                        <p>Documentos estratégicos, revisados e prontos para utilizar imediatamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="section products-section" id="o-que-voce-recebe">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">O que você recebe</h2>
+                <p class="section-subtitle">Materiais profissionais completos para seu posicionamento estratégico.</p>
+            </div>
+            <div class="products-grid fade-up delay-1">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Currículo Estratégico</h3>
+                    <p>Formatado para ATS, com linguagem orientada a resultados e aderente ao mercado.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <h3>LinkedIn Completo</h3>
+                    <p>Perfil otimizado com headline, resumo, experiências e palavras-chave estratégicas.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h3>Resumo Executivo</h3>
+                    <p>Síntese profissional poderosa para apresentações e networking estratégico.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <h3>Pitch Profissional</h3>
+                    <p>Discurso estruturado para se apresentar com confiança em qualquer situação.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>Mensagem para Recrutadores</h3>
+                    <p>Templates personalizados para abordar recrutadores com assertividade.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Mensagem para Headhunters</h3>
+                    <p>Comunicação estratégica para ser encontrado por headhunters do seu segmento.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+                    </div>
+                    <h3>Carta de Apresentação</h3>
+                    <p>Documento personalizado para cada oportunidade, destacando seus diferenciais.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                    </div>
+                    <h3>Análise Currículo x Vaga</h3>
+                    <p>Comparativo inteligente entre seu perfil e os requisitos da vaga desejada.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Preparação para Entrevistas</h3>
+                    <p>Simulações, respostas estratégicas e técnicas para impressionar entrevistadores.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Mapa de Empresas</h3>
+                    <p>Identificação estratégica de empresas-alvo alinhadas ao seu perfil e objetivos.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    </div>
+                    <h3>Plano de Busca</h3>
+                    <p>Roteiro completo com ações diárias para acelerar sua recolocação ou transição.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Estratégia Profissional</h3>
+                    <p>Plano completo de posicionamento e crescimento para sua carreira.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section comparison-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Por que somos diferentes</h2>
+            </div>
+            <div class="comparison-table fade-up delay-1">
+                <div class="comparison-col comparison-us">
+                    <h3>Posiciona Carreira</h3>
+                    <ul>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Método PAP</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> IA Especializada</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Estratégia</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Personalização</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Revisão Inteligente</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Linguagem ATS</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Foco em Mercado</li>
+                        <li class="check"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Comunicação Profissional</li>
+                    </ul>
+                </div>
+                <div class="comparison-col comparison-them">
+                    <h3>Outras Ferramentas</h3>
+                    <ul>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Texto Genérico</li>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Apenas IA</li>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Sem estratégia</li>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Sem personalização</li>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Currículo padrão</li>
+                        <li class="cross"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="12" y1="4" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="4" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Sem leitura de mercado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom -->
+    <section class="section audience-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Para quem é o Posiciona Carreira</h2>
+            </div>
+            <div class="audience-grid fade-up delay-1">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/></svg>
+                    </div>
+                    <h3>Profissionais em recolocação</h3>
+                    <p>Que precisam se destacar rapidamente no mercado competitivo.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+                    </div>
+                    <h3>Executivos</h3>
+                    <p>Que desejam posicionamento premium e comunicação de alto nível.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16,3 21,3 21,8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21,16 21,21 16,21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+                    </div>
+                    <h3>Profissionais em transição</h3>
+                    <p>Que estão mudando de área e precisam reposicionar sua trajetória.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    </div>
+                    <h3>Recém-promovidos</h3>
+                    <p>Que precisam atualizar seu posicionamento para o novo nível.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Lideranças</h3>
+                    <p>Que querem comunicar liderança e impacto de forma estratégica.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <h3>Profissionais que desejam melhorar o LinkedIn</h3>
+                    <p>Que querem ser encontrados e atrair oportunidades certas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section benefits-section" id="beneficios">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Benefícios que transformam carreiras</h2>
+            </div>
+            <div class="benefits-grid fade-up delay-1">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+                    </div>
+                    <span>Mais entrevistas</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span>Mais confiança</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </div>
+                    <span>Mais clareza</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <span>Melhor comunicação</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+                    </div>
+                    <span>Maior aderência às vagas</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <span>LinkedIn profissional</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+                    </div>
+                    <span>Currículo estratégico</span>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <span>Maior destaque no mercado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentials -->
+    <section class="section differentials-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Nossos Diferenciais</h2>
+            </div>
+            <div class="differentials-grid fade-up delay-1">
+                <div class="differential-card">
+                    <div class="differential-number">01</div>
+                    <h3>A IA organiza</h3>
+                    <p>Inteligência Artificial processa suas informações e estrutura conteúdo com precisão.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-number">02</div>
+                    <h3>O Método PAP direciona</h3>
+                    <p>Estratégia profissional aplicada garante que cada material tenha foco e propósito.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-number">03</div>
+                    <h3>Sua trajetória é o centro</h3>
+                    <p>Sua experiência real continua sendo o alicerce de todo o posicionamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="depoimentos">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">O que dizem nossos clientes</h2>
+            </div>
+            <div class="testimonials-grid fade-up delay-1">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MC</div>
+                        <div class="testimonial-info">
+                            <h4>Marcela Costa</h4>
+                            <p>Gerente de Projetos • Tech Corp</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Em duas semanas após usar o Posiciona Carreira, recebi 3 convites para entrevistas. Meu currículo nunca teve tanta clareza e estratégia."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RS</div>
+                        <div class="testimonial-info">
+                            <h4>Ricardo Santos</h4>
+                            <p>Diretor Comercial • Grupo Vencer</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"O LinkedIn otimizado transformou minha presença digital. Headhunters começaram a me procurar ativamente. Resultado surpreendente."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AF</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Ferreira</h4>
+                            <p>Coordenadora de RH • Innova</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Fiz transição de carreira com o suporte do Método PAP. Os materiais me deram confiança total para as entrevistas. Recomendo demais!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-list fade-up delay-1">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como funciona?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você escolhe o serviço, preenche um formulário inteligente sobre sua trajetória, nossa IA analisa suas informações e o Método PAP estrutura seu posicionamento. Em seguida, você recebe materiais profissionais prontos para uso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quanto tempo demora?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Dependendo do serviço escolhido, os materiais são entregues em até 48 horas após o preenchimento do formulário. Pacotes completos podem levar até 5 dias úteis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>A IA cria informações falsas?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não. Nossa IA trabalha exclusivamente com as informações que você fornece. Ela organiza, estrutura e otimiza a linguagem, mas nunca inventa dados ou experiências que não existem.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Recebo arquivos editáveis?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Todos os materiais são entregues em formatos editáveis (Word, PDF e texto) para que você possa realizar ajustes futuros conforme necessário.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Posso atualizar meu currículo depois?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Oferecemos planos de atualização para que você mantenha seus materiais sempre atualizados conforme sua carreira evolui.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Funciona para qualquer profissão?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. O Método PAP é adaptável a qualquer área de atuação, nível hierárquico e segmento de mercado. Desde analistas até C-Level, todas as profissões são atendidas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content fade-up">
+                <h2 class="cta-title">Sua próxima oportunidade começa pelo seu posicionamento.</h2>
+                <p class="cta-text">Você já construiu sua carreira.<br>Agora é hora de apresentá-la da forma correta.</p>
+                <button class="btn btn-primary btn-lg" onclick="openModal()">Quero começar agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">P</span>
+                        <span class="logo-text">Posiciona Carreira <span class="logo-sub">by PAP</span></span>
+                    </a>
+                    <p class="footer-desc">Plataforma completa de posicionamento profissional com Inteligência Artificial orientada pelo Método PAP. Transforme sua trajetória em resultados concretos.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">LGPD</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Redes Sociais</h4>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Posiciona Carreira by PAP. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Form -->
+    <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()" aria-label="Fechar formulário">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal-header">
+                <h2 id="modal-title">Receba seu Diagnóstico Profissional</h2>
+                <p>Preencha os dados abaixo e nossa equipe entrará em contato.</p>
+            </div>
+            <form class="modal-form" id="leadForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(00) 00000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade *</label>
+                        <input type="text" id="cidade" name="cidade" required placeholder="Sua cidade">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
+                            <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
+                            <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
+                            <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                            <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
+                            <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
+                            <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
+                            <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                            <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cargo">Cargo Atual *</label>
+                        <input type="text" id="cargo" name="cargo" required placeholder="Seu cargo atual">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="area">Área de Atuação *</label>
+                    <input type="text" id="area" name="area" required placeholder="Ex: Tecnologia, Finanças, Marketing...">
+                </div>
+                <div class="form-group">
+                    <label>Situação Atual *</label>
+                    <div class="radio-group">
+                        <label class="radio-label"><input type="radio" name="situacao" value="Empregado" required> Empregado</label>
+                        <label class="radio-label"><input type="radio" name="situacao" value="Em recolocação"> Em recolocação</label>
+                        <label class="radio-label"><input type="radio" name="situacao" value="Transição de carreira"> Transição de carreira</label>
+                        <label class="radio-label"><input type="radio" name="situacao" value="Promoção"> Promoção</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="objetivo">Objetivo Profissional *</label>
+                    <textarea id="objetivo" name="objetivo" required placeholder="Descreva brevemente seu objetivo profissional..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="como_conheceu">Como conheceu o Posiciona Carreira?</label>
+                    <select id="como_conheceu" name="como_conheceu">
+                        <option value="">Selecione</option>
+                        <option value="Google">Google</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Indicação">Indicação</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacidade" name="privacidade" required>
+                        <span>Concordo com a <a href="#" target="_blank">Política de Privacidade</a> e autorizo o contato.</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-full">Quero Receber Meu Diagnóstico</button>
+            </form>
+            <!-- Success Message -->
+            <div class="modal-success" id="modalSuccess" style="display:none;">
+                <div class="success-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+                </div>
+                <h3>Formulário enviado com sucesso!</h3>
+                <p>Nossa equipe entrará em contato em breve para iniciar seu diagnóstico profissional.</p>
+                <button class="btn btn-secondary" onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
