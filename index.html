@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-v2.css">
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -31,76 +31,55 @@
     }
     </script>
 </head>
-<body>
+<body class="v2-page">
     <!-- Header -->
     <header class="header" id="header">
         <div class="container header-inner">
-            <a href="#" class="logo">
-                <span class="logo-icon">P</span>
-                <span class="logo-text">Posiciona Carreira <span class="logo-sub">by PAP</span></span>
-            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="nav" id="nav">
+                <button class="nav-close" id="nav-close" aria-label="Fechar menu">
+                    <span></span><span></span>
+                </button>
                 <a href="#como-funciona" class="nav-link">Como funciona</a>
                 <a href="#beneficios" class="nav-link">Benefícios</a>
                 <a href="#o-que-voce-recebe" class="nav-link">O que você recebe</a>
                 <a href="#depoimentos" class="nav-link">Depoimentos</a>
                 <a href="#faq" class="nav-link">FAQ</a>
             </nav>
-            <button class="btn btn-primary btn-header" onclick="openModal()">Quero melhorar meu posicionamento</button>
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
-                <span></span><span></span><span></span>
-            </button>
+            <a href="#" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">Posiciona Carreira <span class="logo-sub">by PAP</span></span>
+            </a>
         </div>
     </header>
 
+    <main class="site-split">
+        <div class="site-content">
+
     <!-- Hero Section -->
     <section class="hero" id="hero">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="Preciso_de_um_video_de_um_empr.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
         <div class="container hero-inner">
             <div class="hero-content fade-up">
-                <h1 class="hero-title">Seu currículo não é o problema.<br><span class="highlight">Seu posicionamento é.</span></h1>
-                <p class="hero-subtitle">Transforme sua trajetória profissional em um currículo estratégico, LinkedIn otimizado, pitch profissional e materiais que realmente fazem sentido para o mercado utilizando <strong>Inteligência Artificial orientada pelo Método PAP</strong>.</p>
-                <div class="hero-badges">
-                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Método Exclusivo PAP</span>
-                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Inteligência Artificial Especializada</span>
-                    <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4.3L6 11.6 2.7 8.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Posicionamento Profissional Estratégico</span>
-                </div>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary btn-lg" onclick="openModal()">Quero transformar minha carreira</button>
-                    <button class="btn btn-secondary btn-lg" onclick="openModal()">Receber diagnóstico gratuito</button>
-                </div>
-            </div>
-            <div class="hero-visual fade-up delay-1">
-                <div class="hero-illustration">
-                    <div class="float-card card-cv">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
-                        <span>Currículo</span>
-                    </div>
-                    <div class="float-card card-linkedin">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                        <span>LinkedIn</span>
-                    </div>
-                    <div class="float-card card-ai">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                        <span>IA</span>
-                    </div>
-                    <div class="float-card card-dashboard">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                        <span>Dashboard</span>
-                    </div>
-                    <div class="float-card card-interview">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                        <span>Entrevistas</span>
-                    </div>
-                    <div class="float-card card-market">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
-                        <span>Mercado</span>
-                    </div>
-                    <div class="illustration-center">
-                        <div class="pulse-ring"></div>
-                        <div class="center-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                        </div>
-                    </div>
+                <h1 class="hero-title">Seu currículo<br>não é o problema.<br><span class="highlight">Seu posicionamento é.</span></h1>
+                <div class="hero-info-grid" aria-label="Diferenciais do Posiciona Carreira">
+                    <article class="hero-info-card">
+                        <h3>Método Exclusivo PAP</h3>
+                        <p>Estrutura prática para apresentar sua trajetória com clareza e impacto.</p>
+                    </article>
+                    <article class="hero-info-card">
+                        <h3>Inteligência Artificial Especializada</h3>
+                        <p>Conteúdo otimizado com linguagem estratégica e alinhamento ao mercado.</p>
+                    </article>
+                    <article class="hero-info-card">
+                        <h3>Posicionamento Profissional Estratégico</h3>
+                        <p>Direcionamento objetivo para aumentar visibilidade e geração de oportunidades.</p>
+                    </article>
                 </div>
             </div>
         </div>
@@ -646,6 +625,9 @@
         </div>
     </section>
 
+        </div>
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -778,6 +760,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script-v2.js"></script>
 </body>
 </html>

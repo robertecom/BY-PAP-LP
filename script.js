@@ -100,15 +100,68 @@ document.querySelectorAll('.faq-question').forEach(function(btn) {
 
 // ===== MOBILE MENU =====
 document.getElementById('mobile-toggle').addEventListener('click', function() {
-    document.getElementById('nav').classList.toggle('active');
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    document.body.classList.toggle('menu-open', nav.classList.contains('active'));
 });
+
+const navCloseButton = document.getElementById('nav-close');
+if (navCloseButton) {
+    navCloseButton.addEventListener('click', function() {
+        document.getElementById('nav').classList.remove('active');
+        document.body.classList.remove('menu-open');
+    });
+}
 
 // Close mobile menu on link click
 document.querySelectorAll('.nav-link').forEach(function(link) {
     link.addEventListener('click', function() {
         document.getElementById('nav').classList.remove('active');
+        document.body.classList.remove('menu-open');
     });
 });
+
+// ===== RESUME ASSEMBLY =====
+const resumeShell = document.getElementById('resumeShell');
+const resumeParts = Array.from(document.querySelectorAll('.resume-part'));
+const resumeSteps = Array.from(document.querySelectorAll('.hero-rail-step'));
+const resumeProgressText = document.getElementById('resumeProgressText');
+const reducedMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function syncResumeState(progress) {
+    const clampedProgress = Math.max(0, Math.min(1, progress));
+
+    if (resumeShell) {
+        resumeShell.style.setProperty('--resume-progress', clampedProgress.toFixed(3));
+    }
+
+    if (resumeProgressText) {
+        resumeProgressText.textContent = Math.round(clampedProgress * 100) + '%';
+    }
+
+    resumeParts.forEach(function(part, index) {
+        const threshold = Number(part.dataset.threshold || ((index + 1) / (resumeParts.length + 1)));
+        part.classList.toggle('is-visible', clampedProgress >= threshold);
+    });
+
+    resumeSteps.forEach(function(step, index) {
+        const thresholdFromPart = resumeParts[index] ? Number(resumeParts[index].dataset.threshold) : 1;
+        step.classList.toggle('is-active', clampedProgress >= thresholdFromPart);
+    });
+}
+
+function updateResumeAssemblyProgress() {
+    if (!resumeShell) return;
+
+    if (window.innerWidth <= 1024 || reducedMotionMedia.matches) {
+        syncResumeState(1);
+        return;
+    }
+
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = maxScroll > 0 ? (window.scrollY / maxScroll) : 1;
+    syncResumeState(progress);
+}
 
 // ===== SCROLL ANIMATIONS =====
 function handleScrollAnimations() {
@@ -129,27 +182,34 @@ window.addEventListener('scroll', function() {
     if (scrollTimeout) return;
     scrollTimeout = setTimeout(function() {
         handleScrollAnimations();
+        updateResumeAssemblyProgress();
         scrollTimeout = null;
     }, 16);
 }, { passive: true });
 
 // Run on load
 handleScrollAnimations();
+updateResumeAssemblyProgress();
+
+window.addEventListener('resize', updateResumeAssemblyProgress);
+reducedMotionMedia.addEventListener('change', updateResumeAssemblyProgress);
 
 // ===== HEADER SCROLL EFFECT =====
 let lastScroll = 0;
-window.addEventListener('scroll', function() {
+function updateHeaderScrollState() {
     const header = document.getElementById('header');
+    if (!header) return;
+
     const scrollY = window.scrollY;
-
-    if (scrollY > 10) {
-        header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.08)';
-    } else {
-        header.style.boxShadow = 'none';
-    }
-
+    header.classList.toggle('is-scrolled', scrollY > 10);
     lastScroll = scrollY;
+}
+
+window.addEventListener('scroll', function() {
+    updateHeaderScrollState();
 }, { passive: true });
+
+updateHeaderScrollState();
 
 // ===== SMOOTH SCROLL FOR NAV LINKS =====
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
